@@ -8,14 +8,32 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: #4CAF50;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1rem 2rem; /* Adjusted padding for better spacing */
+}
+
+header .logo {
+    flex: 0 0 auto; /* Prevent the logo from growing or shrinking */
+}
+
+header .logo-img {
+    height: 50px; /* Adjust the logo size as needed */
+    width: auto;  /* Maintain aspect ratio */
+}
+
+header h1 {
+    flex: 1;
     text-align: center;
+    margin: 0;
+    font-size: 2rem;
 }
 
 nav {
-    margin: 1rem 0;
+    margin-left: auto; /* Align navigation links to the right */
 }
 
 nav a {
